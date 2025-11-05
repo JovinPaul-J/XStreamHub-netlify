@@ -1,7 +1,6 @@
 {
   "name": "xstreamhub-netlify",
   "version": "1.0.0",
-  "main": "functions/livekitToken.ts",
   "scripts": {
     "build": "tsc",
     "start": "netlify dev",
@@ -11,10 +10,13 @@
     "@netlify/functions": "^5.0.1",
     "dotenv": "^16.0.0",
     "firebase-admin": "^11.0.0",
-    "livekit-server-sdk": "^2.13.0"
+    "glob": "^11.0.3",
+    "livekit-server-sdk": "^2.14.0",
+    "rimraf": "^6.1.0"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
+    "@types/glob": "^9.0.0",
+    "@types/node": "^20.19.24",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "eslint": "^8.0.0",
