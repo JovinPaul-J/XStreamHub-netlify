@@ -25,6 +25,16 @@ interface LiveKitRequest {
 }
 
 export const handler: Handler = async (event, context) => {
+  if (!event.queryStringParameters) {
+    return {
+      statusCode: 200,
+      headers: {
+        "Content-Type": "text/plain",
+        "Access-Control-Allow-Origin": "*",
+      },
+      body: "LiveKit token function is up and running!",
+    };
+  }
   const req: LiveKitRequest = {
     queryStringParameters: event.queryStringParameters,
     headers: event.headers,
