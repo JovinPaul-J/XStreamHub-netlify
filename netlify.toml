@@ -1,0 +1,6 @@
+[dev]
+  functions = "functions"
+  port = 8888
+
+[build]
+  functions = "functions"
